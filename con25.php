@@ -38,7 +38,7 @@ for ($i = 0; $i < $H; $i++) {
             // 現在の最小距離よりも小さい場合、新しい最小距離に更新
             if ($distance < $minDistance) {
                 $minDistance = $distance;
-                $bestSeats = [[$i, $j]];
+                $bestSeats = [[$i, $j]];//この段階で初めて多次元配列を作成
                 echo 'debug1 '.$i.' '.$j.PHP_EOL;
             } elseif ($distance == $minDistance) {
                 // 同じ距離の座席がある場合、配列に追加

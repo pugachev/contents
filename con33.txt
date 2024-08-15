@@ -1,0 +1,29 @@
+その1 Left: 38, 27, 43
+その1 Right: 3, 9, 82, 10
+
+その1 Left: 38
+その1 Right: 27, 43
+その1 Left: 27
+その1 Right: 43
+merge前 Left: 27
+merge前 Right: 43
+merge前 Left: 38
+merge前 Right: 27, 43
+
+
+その1 Left: 3, 9
+その1 Right: 82, 10
+その1 Left: 3
+その1 Right: 9
+merge前 Left: 3
+merge前 Right: 9
+その1 Left: 82
+その1 Right: 10
+merge前 Left: 82
+merge前 Right: 10
+merge前 Left: 3, 9
+merge前 Right: 82, 10
+merge前 Left: 38, 27, 43
+
+
+merge前 Right: 3, 9, 82, 10
