@@ -53,20 +53,20 @@
 // $array[] = [1,2,8];
 // $array[] = [1,2,8];
 
-$matrix = [];
+// $matrix = [];
 
-// 2x5の配列を初期化
-for ($i = 0; $i < 2; $i++) {
-    $matrix[$i] = [];
-    for ($j = 0; $j < 2; $j++) {
-        $matrix[$i][$j] = null; // 初期値をnullまたは0などに設定
-    }
-}
+// // 2x5の配列を初期化
+// for ($i = 0; $i < 2; $i++) {
+//     $matrix[$i] = [];
+//     for ($j = 0; $j < 2; $j++) {
+//         $matrix[$i][$j] = null; // 初期値をnullまたは0などに設定
+//     }
+// }
 
-$matrix[0][0]=1;
-$matrix[0][1]=2;
-$matrix[1][0]=2;
-$matrix[1][1]=1;
+// $matrix[0][0]=1;
+// $matrix[0][1]=2;
+// $matrix[1][0]=2;
+// $matrix[1][1]=1;
 
 // $value = 1;
 
@@ -77,24 +77,27 @@ $matrix[1][1]=1;
 //     }
 // }
 
-print_r($matrix);
+// print_r($matrix);
 
-$pX=1;
-$pY=1;
+// $pX=1;
+// $pY=1;
 
-echo $matrix[$pX-1][$pY-1].PHP_EOL;
+// echo $matrix[$pX-1][$pY-1].PHP_EOL;
 
-$pX=1;
-$pY=2;
+// $pX=1;
+// $pY=2;
 
-echo $matrix[$pX-1][$pY-1].PHP_EOL;
+// echo $matrix[$pX-1][$pY-1].PHP_EOL;
 
-$pX=2;
-$pY=1;
+// $pX=2;
+// $pY=1;
 
-echo $matrix[$pX-1][$pY-1].PHP_EOL;
+// echo $matrix[$pX-1][$pY-1].PHP_EOL;
 
-$pX=2;
-$pY=2;
+// $pX=2;
+// $pY=2;
 
-echo $matrix[$pX-1][$pY-1].PHP_EOL;
+// echo $matrix[$pX-1][$pY-1].PHP_EOL;
+
+echo floor(11/3).PHP_EOL;
+echo floor(11%3).PHP_EOL;
