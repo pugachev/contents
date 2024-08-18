@@ -4,11 +4,14 @@
 // print_r($manlist);
 
 //配列に格納
-// $array1=[];
+$array1=[];
+// $array1 = [100];
 // $array1[] = 100;
-// $array1[] = 200;
-// $array1[] = 300;
+$array1[] = 200;
+$array1[] = 300;
+$array1 = [100];
 
+print_r($array1);
 
 // $arra2=[];
 // $array2[]=[10,11];
@@ -99,5 +102,5 @@
 
 // echo $matrix[$pX-1][$pY-1].PHP_EOL;
 
-echo floor(11/3).PHP_EOL;
-echo floor(11%3).PHP_EOL;
+// echo floor(11/3).PHP_EOL;
+// echo floor(11%3).PHP_EOL;
