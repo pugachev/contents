@@ -348,3 +348,20 @@ foreach ($data as $entry) {
 foreach ($result as $letter => $total) {
     echo "$letter $total\n";
 }
+
+// ★No.18 [マトリックスを斜め方向に走査する]
+    // 右上から左下への斜めチェック
+    $array = [
+        [1, 2, 3],
+        [4, 5, 6],
+        [7, 8, 9],
+    ];
+
+    for ($i = 0; $i < $N; $i++) { 
+        // 大事なのはx軸の添字は動かさない 幅があるので。
+        // 添字2個を同時に動かすのは難しい気がする
+        if ($array[$i][$N - $i - 1] != $target) {
+            $diag2_win = false;
+            break;
+        }
+    }
