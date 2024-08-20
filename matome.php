@@ -365,3 +365,52 @@ foreach ($result as $letter => $total) {
             break;
         }
     }
+
+// ★No.19 [2次元配列を縦に走査する]
+$array = [
+    [100, 200, 20],
+    [100, 20, 20],
+    [500, 20, 20],
+];
+
+// 横方向に出力する
+for($i=0;$i<3;$i++){
+    for($k=0;$k<3;$k++){
+        echo $array[$i][$k].' ';
+    }
+    echo PHP_EOL;
+}
+
+echo "-----".PHP_EOL;
+
+// 縦方向に出力する
+for($i=0;$i<3;$i++){
+    for($k=0;$k<3;$k++){
+        echo $array[$k][$i].' ';//$i=0で固定したまま$kを進めると縦い移動していることになる
+    }
+    echo PHP_EOL;
+}
+
+// ★No.20 [2次元配列の配列長と各要素の配列長の求め方]
+$array = [
+    [100, 200, 20],
+    [100, 20, 20],
+    [500, 20, 20],
+];
+
+// 配列の長さ（行数）を取得
+$arrayLength = count($array);
+echo "配列の長さ: $arrayLength\n"; // 出力: 配列の長さ: 3
+
+// 各要素の配列の長さ（列数）を取得
+foreach ($array as $index => $subArray) {
+    $subArrayLength = count($subArray);
+    echo "内部配列 $index の長さ: $subArrayLength\n";
+}
+
+// 配列の長さ: 3
+// 内部配列 0 の長さ: 3
+// 内部配列 1 の長さ: 3
+// 内部配列 2 の長さ: 3
+
+
